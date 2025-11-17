@@ -8,33 +8,75 @@
 import SwiftUI
 
 struct ContentView: View {
+    let emojiThemes: [String:[String]] =
+    ["faces": ["😃", "🤢", "🤫", "😡"],
+     "animals": ["🐵", "🦊", "🐱", "🦁", "🐷"],
+     "fruits": ["🍏", "🍉", "🍋", "🍊", "🫐", "🍇"]
+    ]
+    @State var selectedTheme: String = "faces"
     var body: some View {
-        HStack {
-            CardView(isFaceUp: true)
-            CardView()
+        ScrollView{
+            VStack {
+                Text("Memorize!").font(.title)
+                themeSelector.padding(5)
+                cardStack
+            }.padding()
         }
+    }
+    
+    var currentTheme: [String] {
+        emojiThemes[selectedTheme] ?? []
+    }
+    
+    var themeSelector: some View {
+        HStack {
+            Text("Change theme:").multilineTextAlignment(.leading)
+            HStack {
+                ForEach([String](emojiThemes.keys), id: \.self) {
+                    theme in
+                    let uppercase = theme.prefix(1).uppercased() + theme.dropFirst()
+                    Button(action: {
+                        selectedTheme = theme
+                    }, label: {
+                        Text(uppercase)
+                    })
+                    .buttonStyle(.borderedProminent)
+                    .frame(maxWidth: .infinity)
+                }
+            }
+            .fixedSize(horizontal: true, vertical: true)
+        }
+    }
+    
+    var cardStack: some View {
+        LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
+            let deck = (currentTheme + currentTheme).shuffled()
+            ForEach(0..<deck.count, id: \.self) { index in
+                CardView(content: deck[index], isFaceUp: false).aspectRatio(1, contentMode: .fit)
+            }
+        }
+        .foregroundColor(.green)
         .padding()
     }
 }
 
 struct CardView: View {
-    var isFaceUp: Bool = false
+    let content: String
+    @State var isFaceUp: Bool = false
+    
     var body: some View {
         ZStack {
-            if isFaceUp {
-                RoundedRectangle(cornerRadius: 12)
-                    .foregroundColor(.white)
-                RoundedRectangle(cornerRadius: 12)
-                    .strokeBorder(lineWidth: 10)
-                    .foregroundColor(.green)
-                Text("😃").font(.largeTitle)
+            let baseShape = RoundedRectangle(cornerRadius: 12)
+            Group {
+                baseShape.foregroundColor(.white)
+                baseShape.strokeBorder(lineWidth: 10)
+                Text(content).font(.largeTitle)
             }
-            else {
-                RoundedRectangle(cornerRadius: 12)
-            }
+            baseShape.fill().opacity(isFaceUp ? 0 : 1)
         }
-        .foregroundColor(.green)
-        .padding()
+        .onTapGesture(perform: {
+            isFaceUp.toggle()
+        })
     }
 }
 
