@@ -44,16 +44,12 @@ struct MemoryGame<CardContent: Equatable> {
                 } else {
 
                     for index in cards.indices {
-                        if !cards[index].isMatched {
-                            cards[index].isFaceUp = false
-                        }
+                        cards[index].isFaceUp = false
                     }
                 }
                 cards[chosenIndex].isFaceUp = true
             }
         }
-        print(cards)
-        print(allIsMatched)
     }
     
     mutating func shuffle() {

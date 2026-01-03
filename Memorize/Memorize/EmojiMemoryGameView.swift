@@ -19,7 +19,7 @@ struct EmojiMemoryGameView: View {
     var body: some View {
         VStack {
             Text("Has won: " + (gameController.allIsMatched ? "Yes" : "No"))
-            cardStack.animation(.default, value: gameController.cards).background(.red)
+            cardStack.animation(.default, value: gameController.cards)
             Button("Shuffle") {
                 gameController.shuffle()
             }
