@@ -9,8 +9,8 @@ import SwiftUI
 
 // ViewModel
 class EmojiMemoryGame: ObservableObject {
-    private static let emojis = ["🍏", "🍉", "🍋", "🍊", "🫐", "🍇"]
-    @Published private var gameController = MemoryGame(numberOfPairsOfCards: 6) { index in
+    private static let emojis = ["🍏", "🍉", "🍋", "🍊", "🫐", "🍇", "🍒", "🍌", "🍓"]
+    @Published private var gameController = MemoryGame(numberOfPairsOfCards: 9) { index in
         if index < emojis.count {
             return emojis[index]
         } else {
