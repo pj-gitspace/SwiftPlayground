@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct AspectVGrid<Item: Identifiable, ItemView: View>: View{
+struct AspectVGrid<Item: Identifiable, ItemView: View>: View {
     var items: [Item]
     var aspectRatio: Float = 1
-    var content: (Item) -> ItemView
+    @ViewBuilder var content: (Item) -> ItemView
     
     var body: some View {
         GeometryReader {

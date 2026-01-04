@@ -27,6 +27,10 @@ class EmojiMemoryGame: ObservableObject {
         gameController.allIsMatched
     }
     
+    var score: Int {
+        gameController.score
+    }
+    
     // MARK: - Intents
     
     func shuffle() {
