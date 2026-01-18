@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "172069D9-B712-4FE0-AE9C-1656D9E01657"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CounterTest/CounterTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CounterTest"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - cd80cae4775e2a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; CounterTest.CounterTest"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/CounterTest/CounterTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - 90bf25e53a6aebf2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; CounterTest.CounterTest"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/CounterTest/CounterTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13">
+               </Location>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - e940e444d9288f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.__allocating_init(selector: ObjectiveC.Selector) -&gt; CounterTest.CounterTest"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/CounterTest/CounterTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - 2db2b5ce32f6c9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.init(selector: ObjectiveC.Selector) -&gt; CounterTest.CounterTest"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/CounterTest/CounterTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13">
+               </Location>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - d4efe93e44dd54fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.__allocating_init() -&gt; CounterTest.CounterTest"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/CounterTest/CounterTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - dc62f6faaec7b9b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.init() -&gt; CounterTest.CounterTest"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/%3Cstdin%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "43AE4488-991C-4F40-B950-B72BC2A8BF37 - 3dcc2964e6451a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterTest.CounterTest.__deallocating_deinit"
+                  moduleName = "CounterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickjarvis/Documents/SwiftPlayground/Counter/CounterTest/CounterTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
